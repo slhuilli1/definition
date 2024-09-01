@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+<name>Définitions</name>
+<author>sebastien lhuillier</author>
+<version>1.0.0</version>
+<description>Module recherchant dans la documentation l'ensemnle des mots définis.</description>
+	<files>
+		<filename>mod_definitions.xml</filename>
+		<filename module = "mod_definitions">mod_definitions.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+	</files>
+	<config>
+	<fields name="params">
+			<fieldset name="basic">
+				<field name="titre" type="text" default="" label="Titre à afficher" description="" size="10" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
